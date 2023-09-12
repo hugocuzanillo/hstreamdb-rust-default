@@ -70,7 +70,7 @@ pub struct FlushSettings {
 
 impl FlushSettings {
     pub fn builder() -> FlushSettingsBuilder {
-        default()
+        Default::default()
     }
 }
 
