@@ -1,4 +1,4 @@
-#![feature(default_free_fn)]
+//#![feature(default_free_fn)]
 #![feature(map_first_last)]
 
 pub mod appender;
