@@ -81,7 +81,7 @@ pub struct ChannelProviderSettingsBuilder(ChannelProviderSettings);
 
 impl ChannelProviderSettings {
     pub fn builder() -> ChannelProviderSettingsBuilder {
-        ChannelProviderSettingsBuilder(default())
+        ChannelProviderSettingsBuilder(Default::default())
     }
 }
 
