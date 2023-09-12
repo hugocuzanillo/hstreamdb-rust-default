@@ -70,7 +70,7 @@ pub struct FlushSettings {
 
 impl FlushSettings {
     pub fn builder() -> FlushSettingsBuilder {
-        default()
+        Default::default()
     }
 }
 
@@ -242,7 +242,7 @@ impl Producer {
             }
             Ok(shard_id) => match self.shard_buffer.get_mut(&shard_id) {
                 None => {
-                    let mut buffer_state: BufferState = default();
+                    let mut buffer_state: BufferState = Default::default();
                     buffer_state.modify(&record);
                     self.shard_buffer_state.insert(shard_id, buffer_state);
                     self.shard_buffer.insert(shard_id, vec![record]);
